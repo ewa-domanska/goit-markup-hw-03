@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>goit-markup-hw-03</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+              integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+              crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -12,32 +15,40 @@
 
     </head>
     <body>
-        <header>
-            <a class="studio-color" href="/goit-markup-hw-03/index.html"><span class="web-color">Web</span>Studio</a>
-            <nav class="navigation">
-                <ul class="navigation-list">
-                    <li><a class="navigation-list-menu" href="/goit-markup-hw-03/index.html">Agencja</a></li>
-                    <li><a class="navigation-list-menu" href="/goit-markup-hw-03/portfolio.html">Portfolio</a></li>
-                    <li><a class="navigation-list-menu" href="#kontakt">Kontakt</a></li>
+        <header class="header">
+            <div class="container">
+                <a class="studio-color" href="/goit-markup-hw-03/index.html"><span
+                        class="web-color">Web</span>Studio</a>
+                <nav class="navigation">
+                    <ul class="navigation-list list">
+                        <li class="navigation-link"><a class="navigation-list-menu link"
+                                                       href="/goit-markup-hw-03/index.html">Agencja</a></li>
+                        <li class="navigation-link"><a class="navigation-list-menu link"
+                                                       href="/goit-markup-hw-03/portfolio.html">Portfolio</a></li>
+                        <li class="navigation-link"><a class="navigation-list-menu link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="navigation-data list">
+                    <li>
+                        <a class="contact-data link" href="tel:+48111111111">+48 111 111 111</a>
+                    </li>
+                    <li>
+                        <a class="contact-data link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul>
-                <li>
-                    <a class="contact-data" href="tel:+48111111111">+48 111 111 111</a>
-                </li>
-                <li>
-                    <a class="contact-data" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-            </ul>
+            </div>
         </header>
         <main>
-            <section>
+            <section class="background-header">
                 <!--Sekcja HERO-->
-                <div id="hero"></div>
+                <div class="container" id="hero"></div>
                 <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                 <button class="modal-btn" type="button">Zamów usługe</button>
             </section>
-            <section>
+
+            <section class="about-us">
+                <div class="container">
                 <ul class="boxes">
                     <li class="boxes-text">
                         <h3 class="boxes-text-header">LOREM IPSUM</h3>
@@ -68,6 +79,7 @@
 
                     </li>
                 </ul>
+            </div>
             </section>
             <section>
                 <div id="o_nas"></div>

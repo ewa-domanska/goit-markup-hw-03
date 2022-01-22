@@ -9,6 +9,7 @@ body {
     font-family: var(--main-font);
     color: var(--main-color);
 }
+
 /*Poniżej globalne resetowanie*/
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,17 +26,61 @@ p {
     padding: 0;
 }
 
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
+}
+
 /* ======COMPONENTS====== */
 .modal-btn {
     cursor: pointer;
     background-color: var(--secondary-color);;
     color: #FFFFFF;
+    height: 600px;
+    width: 1600px;
+    left: 0px;
+    top: 80px;
+    border-radius: 0px;
+
 }
 
 /* ======END COMPONENTS====== */
 
 
 /* ======HEADER====== */
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation-link:not(:last-child) {
+    margin-right: 46px;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+
 .studio-color {
     text-decoration: none;
     font-family: var(--secondary-font);
@@ -44,17 +89,16 @@ p {
     color: var(--main-color);
 }
 
+.studio-color {
+    padding-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 .web-color {
     font-family: var(--secondary-font);
     color: var(--secondary-color);;
 }
-
-.navigation {
-}
-
-.navigation-list {
-}
-
 
 .navigation-list-menu {
     font-weight: 500;
@@ -64,10 +108,23 @@ p {
     color: var(--main-color);
     text-decoration: none;
 }
+
 .navigation-list-menu:hover,
 .navigation-list-menu:focus {
     color: var(--secondary-color);
+}
 
+.navigation-data {
+    display: flex;
+    align-items: center;
+}
+
+.header .navigation-data {
+    margin-left: auto;
+}
+
+.contact-data {
+    margin-right: 50px;
 }
 
 .contact-data {
@@ -86,7 +143,20 @@ p {
 
 /* ======END HEADER====== */
 
-/* ======TEXT BOXES====== */
+/* ======TEXT BOXES HERO====== */
+.background-header {
+    height: 600px;
+    width: 1600px;
+    top: 80px;
+    background-color: #2F303A;
+}
+.background-header .main-header{
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+}
 .main-header {
     font-weight: 900;
     font-size: 44px;
@@ -96,6 +166,16 @@ p {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+}
+
+.background-header .modal-btn {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .boxes {
@@ -124,8 +204,9 @@ p {
 
 /* ======ABOUT US====== */
 .team {
-    background:#F5F4FA;
+    background: #F5F4FA;
 }
+
 .secondary-header {
     font-weight: 700;
     font-size: 36px;
