@@ -8,6 +8,7 @@
 body {
     font-family: var(--main-font);
     color: var(--main-color);
+    width: 1600px;
 }
 
 /*Poniżej globalne resetowanie*/
@@ -45,23 +46,32 @@ img {
     margin: 0 auto;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
 /* ======COMPONENTS====== */
 .modal-btn {
     cursor: pointer;
-    background-color: var(--secondary-color);;
+    background-color: var(--secondary-color);
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     color: #FFFFFF;
-    height: 600px;
-    width: 1600px;
-    left: 0px;
-    top: 80px;
-    border-radius: 0px;
-
 }
 
 /* ======END COMPONENTS====== */
 
 
 /* ======HEADER====== */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header .container {
     display: flex;
@@ -97,7 +107,8 @@ img {
 
 .web-color {
     font-family: var(--secondary-font);
-    color: var(--secondary-color);;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
 }
 
 .navigation-list-menu {
@@ -150,22 +161,23 @@ img {
     top: 80px;
     background-color: #2F303A;
 }
-.background-header .main-header{
+
+.main-header {
     position: absolute;
     width: 696px;
     height: 120px;
     left: 452px;
     top: 280px;
-}
-.main-header {
+
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.363;
-    color: #FFFFFF;
-    background-color: #2F303A;;
+    line-height: 60px;
+
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
 .background-header .modal-btn {
@@ -176,13 +188,6 @@ img {
     top: 430px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-}
-
-.boxes {
-}
-
-.boxes-text {
-
 }
 
 .boxes-text-header {
@@ -205,6 +210,17 @@ img {
 /* ======ABOUT US====== */
 .team {
     background: #F5F4FA;
+    height: 648px;
+    width: 1600px;
+    left: 0px;
+    top: 1449px;
+    border-radius: 0px;
+
+}
+
+.container .boxes {
+    display: flex;
+    list-style: none;
 }
 
 .secondary-header {
@@ -213,6 +229,45 @@ img {
     line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+
+.our-team {
+    position: absolute;
+    width: 1170px;
+    height: 368px;
+    left: 215px;
+    top: 1635px;
+
+}
+
+.container .pictures {
+    display: flex;
+    list-style: none;
+}
+
+.pictures-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*TEAM*/
+.container .our-team {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.our-team-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-team-list-photo {
+    height: 260px;
+    width: 270px;
+    left: 215px;
+    top: 1635px;
+    border-radius: 0px;
+    padding-bottom: 30px;
 }
 
 .boxes-text-header-name {
@@ -236,6 +291,10 @@ img {
 /* ======FOOTER====== */
 .address {
     background-color: #2F303A;
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0;
 }
 
 .studio-color-small {
@@ -251,12 +310,18 @@ img {
     font-style: normal;
 }
 
+.address-list li:first-child {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
 .address-list-item {
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     text-decoration: none;
+    padding-bottom: 9px;
 }
 
 .address-list-item-data {
@@ -309,6 +374,19 @@ img {
 }
 
 /*End portfolio navigation without hover*/
+.container .filter {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.filter {
+    width: 1170px;
+}
+
+.filter li {
+    padding-right: 8px;
+}
 
 .modal-btn-filter {
     background: #F5F4FA;
@@ -333,11 +411,28 @@ img {
     color: #FFFFFF;
 }
 
+.projects {
+    margin-top: 50px;
+}
+
+.projects-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-portfolio-list {
+    flex: 20%;
+    margin: 0 10px 30px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
 .projects-portfolio-name {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-left: 24px;
+
 }
 
 .projects-portfolio-name-description {
@@ -345,6 +440,7 @@ img {
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-left: 24px;
 }
 
 /* ======END PORTFOLIO======*/
