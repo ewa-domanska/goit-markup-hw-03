@@ -150,19 +150,18 @@ img {
 /* ======END HEADER====== */
 
 /* ======TEXT BOXES HERO====== */
-.banner {
-    height: 600px;
+.banner-background {
     background-color: #2F303A;
-    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .banner-content {
+    display: flex;
+    flex-direction: column;
     width: 696px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center
+    margin: 0 auto;
+    align-items: center;
 }
 
 .main-title {
